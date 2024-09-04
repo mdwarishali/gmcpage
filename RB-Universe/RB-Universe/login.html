@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="canonical" href="https://riskbirbal.com/services/insurance-policies" />
+    <link rel="icon" type="image/png" href="https://riskbirbal.com/assets/images/common/dark.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">    
+    <!-- <link rel="stylesheet" href="https://riskbirbal.com/assets/css/bootstrap.min.css" /> -->
+    <link rel="stylesheet" href="https://riskbirbal.com/assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://riskbirbal.com/assets/css/style.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://riskbirbal.com/assets/css/responsive.css" />
+    <link rel="stylesheet" href="https://riskbirbal.com/assets/css/services.css" />
+    <link rel="stylesheet" href="./footer.css" />
+
+        <!-- OG tags -->
+
+    <meta property="og:title" content="Riskbirbal: Leading Insurance Experts Explore Our Solutions!" >
+    <meta property="og:site_name" content="Riskbirbal" > 
+    <meta property="og:url" content="https://www.riskbirbal.com" >
+    <meta property="og:description" content="Elevate Your Business with Us, the Leading Tech-Enabled Insurance Brokers. Explore Tailored Insurance & Risk Solutions to Build Your Business with Resilience." >
+    <meta property="og:type" content="website" >
+    <meta property="og:image" content="https://www.riskbirbal.com/images/common/dark-risk.webp" >
+    <meta name="twitter:card" content="summary_large_image" >
+    <meta name="twitter:site" content="@Riskbirbal" >
+    <meta name="twitter:title" content="Riskbirbal: Leading Insurance Experts Explore Our Solutions!" >
+    <meta name="twitter:description" content="Elevate Your Business with Us, the Leading Tech-Enabled Insurance Brokers. Explore Tailored Insurance & Risk Solutions to Build Your Business with Resilience." >
+    <meta name="twitter:image" content="https://www.riskbirbal.com/images/common/dark-risk.webp" > 
+    <style>
+            .container {
+            /* display: flex; */
+            width: 100%;
+            /* height: 100vh;  */
+            /* Optional: set to full viewport height */
+        }
+        .left a {
+            color: #f2ebff;
+            text-decoration: underline;
+            border-bottom: 1px solid #7071b690;
+            display: block;
+            text-decoration: none;
+            padding: .5rem;
+        }
+        .left li:hover {
+            background: linear-gradient(45deg, #30498d, #00000012);
+            border-radius: 0 3rem 3rem 0;
+        }
+
+        .left li:hover a{ 
+            color:#cdb4e6;
+        }
+
+        div.sticky {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            /* padding: 5px; */
+            /* background-color: #cae8ca; */
+            /* border: 2px solid #4CAF50; */
+            }
+        h3#loginModalLabel\ text-center\ w-100 {    
+            padding-top: .5rem;
+        }
+        .left {
+            width: 20%;
+            background: linear-gradient(115deg, #284491, #834e99);
+            overflow-y: auto;
+            box-sizing: border-box;
+            padding: .5rem;
+            max-height: 430px;
+            overflow-y: auto;
+            border-radius: 10px;
+        }
+
+        .left-panel ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .left-panel li {
+            margin: 10px 0;
+            position: relative; /* Ensure submenu appears over other content */
+        }
+        
+        .left .search-bar {
+            margin-bottom: 10px;
+        }
+        .left .menu-item {
+            padding: 10px;
+            cursor: pointer;
+            border-bottom: 1px solid #ccc;
+        }
+        .left .menu-item:hover {
+            background-color: #e0e0e0;
+        }
+
+        /* #myMenu li:hover .submenu {
+            display: block;
+            transition: all 2s;
+        }
+        #myMenu li .submenu {
+            display: none;
+        } */
+
+        .left-panel a {
+            text-decoration: none;
+            color: #333;
+            display: block; /* Ensure the entire area is clickable */
+            padding: 5px 10px;
+            border-radius: 3px;
+            transition: background-color 0.3s ease; /* Smooth hover transition */
+        }
+        /* .submenu {
+            list-style-type: none;
+            padding-left: 15px;
+            margin-top: 5px;
+        }
+
+        .submenu li {
+            margin: 5px 0;
+        } */
+
+        .submenu {
+            list-style-type: none;
+            /* padding-left: 15px; */
+            margin: 0;
+            max-height: 0; /* Initially hide the submenu */
+            overflow: hidden;
+            /* transition: max-height 0.3s ease-out;  */
+            /* Smooth transition for showing/hiding */
+            /* transition: visibility 1s; */
+        }
+        .submenu.expanded {
+    max-height: 1000px; /* Large enough value to show all items */
+}
+        .submenu li a{
+            font-size: .75rem;
+            color:#e9e5fc !important;
+        }
+        .submenu li:hover a{
+            font-size: .7rem;
+            color:#f1f1f1 !important;
+        }
+        .submenu li:hover{
+            background: linear-gradient(115deg, #284491, #834e99);
+            border-radius:0;
+        }
+
+        .cls_btn_nw {
+            position: absolute;
+            width: 100%;
+            display: block;
+        } 
+.btn-close {
+    --bs-btn-close-color: #000;
+    --bs-btn-close-bg: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e);
+    --bs-btn-close-opacity: 0.5;
+    --bs-btn-close-hover-opacity: 0.75;
+    --bs-btn-close-focus-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    --bs-btn-close-focus-opacity: 1;
+    --bs-btn-close-disabled-opacity: 0.25;
+    --bs-btn-close-white-filter: invert(1) grayscale(100%) brightness(200%);
+    box-sizing: content-box;
+    width: 1em;
+    height: 1em;
+    padding: .25em .25em;
+    color: var(--bs-btn-close-color);
+    background: transparent var(--bs-btn-close-bg) center / 1em auto no-repeat;
+    border: 0;
+    border-radius: .375rem;
+    opacity: var(--bs-btn-close-opacity);
+    position: absolute;
+    right: 0;
+    margin: 1rem;
+}
+
+        .has-submenu:hover .submenu {
+            /* max-height: 1000px;      */
+            /* Large enough value to show all items */
+            transition: max-height 2s;
+        }
+
+        .right {
+            width: 100%;
+            /* background-color: #e0e0e0; */
+            padding: 0 .25rem;
+            box-sizing: border-box;
+            overflow-y: auto;
+        }
+        .modal-dialog-centered {
+            display: flex;
+            align-items: center;
+            min-height: calc(100% - 1rem);
+        }
+        .modal-content {
+            margin: auto;
+        }
+        input:focus, input:hover{ 
+            outline: none; 
+            box-shadow: none !important;
+        }
+        .btn-outline-secondary {
+            --bs-btn-color: #6c757d;
+            --bs-btn-border-color: #d9d6d6;
+        }
+        #heading_box{ width:86%; margin: 0 auto 1rem;}
+        #loginForm, .modal-title{ width: 100%; margin: 0 auto;}
+        #rblogo_box{ display: block; width: 100%;}
+        #hom_btn{color:#cecece;}
+        #hom_btn:hover{color:rgb(5, 62, 132);}
+        #con_divbox{
+            display: block;
+        }
+        /* #loginForm{ box-shadow: 0px 15px 20px #cecece} */
+      
+        .btn-rd222 {
+    color: #fff;
+    border: none;
+    background: linear-gradient(200deg, #2671cd 3.33%, #a468c2 70.46%);
+}
+.modal-dialog {
+        max-width: 1000px;
+        margin: .5rem auto;
+    }
+    #loginModalLabel{ 
+        display: block;
+        width: 100%;
+        text-align: center !important;}
+        #login_img img{ border-radius:0 5px 5px 0;}
+        h1 span{ 
+            font-size: 1rem; 
+            display: block;
+            width: 100%;
+            color:#333;
+        }
+
+        h1 {
+        font-size: 1.5rem;
+        line-height: 1.4;
+        color: #284491;
+    }
+ 
+    iframe {
+    border: none;
+    height: 70vmax;
+    width: 98%;
+    margin: 0 1%;
+    border-radius: .5rem;
+}
+        /* for mobile device */
+    @media only screen and (max-width: 768px) {
+        .left, .right{ width: 100%;}
+         .right{ margin-top: .5rem !important;}
+         #loginForm, .modal-title {
+    width: 90%;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+#login_img img{
+        display:none;
+}
+#loginForm button.btn{
+ width: 50% !important;
+}   
+#loginForm { border-radius: 5px;}
+iframe{ width:100%;}
+
+    }
+    @media only screen and (min-width: 768px) {
+
+    #loginForm, .modal-title{ 
+        width: 90%;
+        margin: 0 auto 0 2.5rem;
+    }
+    #rblogo_box{ 
+        display: inline; 
+        width:2%;
+    }
+    #con_divbox{ 
+        display: flex;
+        width: 98%;
+        margin: 1rem auto;
+        padding: 1rem;
+        border-radius: .5rem;
+        background: #f0f0f0;
+    }
+
+
+}
+@media only screen and (max-width: 992px) {
+
+    .modal-content {
+    margin: auto;
+    width: 90%;
+    height: 90vh;
+}
+
+}
+
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .left{ width: 30%;}
+
+}
+
+    </style>
+</head>
+<body>
+     <!-- Modal -->
+     <div class="modal fade show" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true" style="display: block; overflow-y: hidden; background: linear-gradient(35deg, #053e84, #012653);">
+        <div class="modal-dialog modal-lg modal-dialog-centered h-100">
+
+            <div class="modal-content">
+      <!-- Modal Header -->
+      <!-- <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Login</h5>
+       
+    </div> -->
+                <!-- <div class="modal-header py-0">
+                    <a class="p-0 " href="https://riskbirbal.com/" id="rblogo_box">
+                        <div class="cir-cle" style="width: 65px; height: 65px; border-radius: 50%; background: #FFF; padding: 5px; ">
+                        <img src="https://riskbirbal.com/assets/images/common/dark-risk.webp" alt="dark" style="width: 55px;"></div>
+                            
+                          </a>
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <a href="https://riskbirbal.com/" id="hom_btn"><i class="fa-solid fa-house"></i></a>
+                </div> -->
+                <div class="modal-body p-0">
+                    <div class="cls_btn_nw">
+                    <button type="button" class="btn-close" aria-label="Close" onclick="closeAndRedirect()"></button>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-12 col-lg-6">
+                            <center><h1 class="mt-3"><span>Welcome to</span> RB Universal</h1></center>   
+                            <div class="d-flex justify-content-center align-items">
+                                <div class="cir-cle" style="width: 40%; margin: 0 auto; ">
+                                    <a href="https://riskbirbal.com/"><img src="https://riskbirbal.com/assets/images/common/dark-risk.webp" alt="dark" style="width: 60%; margin: 0 20%;"></a>
+                                </div>
+                                <!-- <div >
+                                    <a href="https://riskbirbal.com/" id="hom_btn" style="display: inline-block; width: 50px; text-align:right; padding:1rem;"><i class="fa-solid fa-house"></i></a>
+                                </div> -->
+                            </div>
+                            
+                                <center><h3 class="modal-title" id="loginModalLabel text-center w-100">Login</h3></center>
+                            <form id="loginForm" class="needs-validation" novalidate action="index.html">
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">User ID</label>
+                                    <input type="text" class="form-control" id="email" name="email" required>
+                                    <div class="invalid-feedback">
+                                        Please enter a user id.
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="password" name="password" required>
+                                    <div class="invalid-feedback">
+                                        Please enter your password.
+                                    </div>
+                                </div>
+                                <center><button type="submit" class="btn btn-primary w-25 rounded-pill">Login</button></center>
+                                <!-- <div class="text-center">
+                                    <p class="text-dark">
+                                        Don't Have An Account? &nbsp;
+                                        <a style="color:purple" href="https://riskbirbal.com/quote/home/signup" target="_blank">Sign Up</a>
+                                     </p>
+                                </div> -->
+                            </form>
+                        </div>
+                        <div class="col-12 col-lg-6" id="login_img">
+                            <img src="./2.png" alt="RB image" width="100%" />
+                        </div>
+
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+    </html>

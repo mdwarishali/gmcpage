@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Know Your Product Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .video-thumb {
+      cursor: pointer;
+    }
+    .video-modal iframe {
+      width: 100%;
+      height: 100%;
+    }
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: row ;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.accordion-button{ font-weight: 600;}
+.accordion-button:not(.collapsed) {
+    color: #f2f7ff;
+    background-color: #6869c2;
+}
+#productAccordion a{ 
+  text-transform: capitalize; 
+  text-decoration: none;
+  color:#284491;
+  display: inline-block;
+  margin: .25rem;
+  background: #f6f6ff;
+  border: 1px solid #e0d6f4;
+  padding: .025rem 1rem;
+  border-radius: 1.5rem;
+  font-weight:500;
+}
+#productAccordion a::first-letter {
+  font-size: 110%;
+  font-weight:600;
+  color: #834e99;
+}
+#productAccordion a:hover{
+  background: #dddafb;
+  border: 1px solid #c2a8f6;
+}
+
+#productAccordion .accordion-button:focus {
+ box-shadow: none;
+}
+
+
+   
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+  #productAccordion a {
+        display: block !important;
+        width: 100% !important;
+        text-align: start;
+    }
+    .accordion{
+      --bs-accordion-body-padding-x: .5rem;
+    --bs-accordion-body-padding-y: .5rem;
+    }
+
+}
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    #productAccordion a {
+            display:inline-block !important;
+            width:auto !important;
+        }
+
+}
+
+@media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 1112px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    #productAccordion a {
+            display:inline-block !important;
+            width:auto !important;
+        }
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    #productAccordion a {
+            display:inline-block !important;
+            width:auto !important;
+        }
+}
+  </style>
+</head>
+<body>
+
+<div class="container-fluid mt-1">
+    <h1> You can know about our products here.</h1>
+  <div class="accordion" id="productAccordion">
+    <!-- Accordion Item 1 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Property
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#productAccordion">
+        <div class="accordion-body d-flex flex-wrap">
+          <a href="view_page_content.html">bharat griha raksha policy</a>
+          <a href="view_page_content.html">bharat sookshma udyam suraksha policy</a>
+          <a href="view_page_content.html">bharat laghu udyam suraksha policy</a> 
+          <a href="view_page_content.html">standard fire and special peril policy</a> 
+          <a href="view_page_content.html">fire (petrochemical)</a>
+          <a href="view_page_content.html">fire loss of profit</a>
+          <!-- <img src="https://youtu.be/M98BROjMcXQ" class="img-thumbnail video-thumb" data-bs-toggle="modal" data-bs-target="#videoModal" data-video="https://youtu.be/M98BROjMcXQ" alt="Thumbnail 1">
+          <img src="thumb2.jpg" class="img-thumbnail video-thumb" data-bs-toggle="modal" data-bs-target="#videoModal" data-video="https://www.youtube.com/embed/videoid2" alt="Thumbnail 2">
+          <img src="thumb3.jpg" class="img-thumbnail video-thumb" data-bs-toggle="modal" data-bs-target="#videoModal" data-video="https://www.youtube.com/embed/videoid3" alt="Thumbnail 3">
+          <img src="thumb4.jpg" class="img-thumbnail video-thumb" data-bs-toggle="modal" data-bs-target="#videoModal" data-video="https://www.youtube.com/embed/videoid4" alt="Thumbnail 4">
+          <img src="thumb5.jpg" class="img-thumbnail video-thumb" data-bs-toggle="modal" data-bs-target="#videoModal" data-video="https://www.youtube.com/embed/videoid5" alt="Thumbnail 5"> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Accordion Item 2 -->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseOne">
+            Marine
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#productAccordion">
+          <div class="accordion-body d-flex flex-wrap">
+            <a href="#">marine transit  insurance (inland) open policy</a>
+            <a href="#">marine transit  insurance (import) open policy</a>
+            <a href="#">marine transit  insurance (export) open policy</a>
+            <a href="#">marine export-import insurance (stop)</a>
+            <a href="#">marine hull insurance</a>
+            <a href="#">marine hull loss of earnings / hire insurance</a>
+            <a href="#">protection and indemnity insurance</a>
+            <a href="#">tea insurance package policy</a>
+            <a href="#">port package insurance</a>
+            <a href="#">energy package insurance</a>
+
+          </div>
+        </div>
+      </div>  
+      
+    <!-- Accordion Item 3 -->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseOne">
+            Engineering
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#productAccordion">
+          <div class="accordion-body d-flex flex-wrap">
+            <a href="#">boiler and pressure plant insurance</a>
+            <a href="#">electronic equipment insurance</a>
+            <a href="#">machinery breakdown insurance policy</a>
+            <a href="#">contractors all risks insurance</a>
+            <a href="#">contractors plant and machinery insurance</a>
+            <a href="#">erection all risks insurance</a>
+            <a href="#">machinery loss of profits insurance</a>
+            <a href="#">civil engineering completed risks (cecr)</a>
+            <a href="#">deterioration of stocks</a>
+            <a href="#">erection/construction all risk advance loss of profit insurance</a>
+            <a href="#">solar panel warranty</a>
+          </div>
+        </div>
+      </div>      
+
+    <!-- Accordion Item 4 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseOne">
+          Liability
+        </button>
+      </h2>
+      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#productAccordion">
+        <div class="accordion-body d-flex flex-wrap">
+          <a href="#">public liability insurance (under public liability insurance act, 1991)</a>
+          <a href="#">public liability insurance (industrial risks)</a>
+          <a href="#">public liability insurance (non-industrial risks)</a>
+          <a href="#">product liability insurance policy</a>
+          <a href="#">professional indemnity policy for doctors and medical practitioners</a>
+          <a href="#">professional indemnity policy for medical establishments</a>
+          <a href="#">professional indemnity policy for consulting engineers, architects and interior decorators</a>
+          <a href="#">professional indemnity policy for chartered accountants / management consultants / lawyers / advocates / solicitors / counsels</a>
+          <a href="#">comprehensive general liability policy</a>
+          <a href="#">kidnap and ransom liability insurance</a>
+          <a href="#">clinical trials liability insurance</a>
+          <a href="#">directors and officers liability insurance</a>
+          <a href="#">product recall guarantee and financial loss liability insurance</a>
+          <a href="#">professional indemnity (technology) insurance</a>
+          <a href="#">carrier’s legal liability insurance</a>
+          <a href="#">total recall contamination (brand protection)</a>
+          <a href="#">premises pollution liability insurance</a>
+          <a href="#">public offering of security liability insurance</a>
+          <a href="#">employee dishonesty liability insurance</a>
+          <a href="#">employment practices liability insurance</a>
+          <a href="#">financial services /institutions professional indemnity insurance</a>
+          <a href="#">commercial political risk insurance</a>
+          <a href="#">cyber risk policy </a>
+          <a href="#">cyber crime insurance policy</a>
+        </div>
+      </div>
+    </div>  
+
+   <!-- Accordion Item 5 -->
+   <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseOne">
+        Miscellaneous
+      </button>
+    </h2>
+    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#productAccordion">
+      <div class="accordion-body d-flex flex-wrap">
+        <a href="#">burglary insurance</a>
+        <a href="#">credit insurance worldwide</a>
+        <a href="#">credit insurance inland</a>
+        <a href="#">credit insurance export only</a>
+        <a href="#">credit insurance single shipment</a>
+        <a href="#">all risk insurance</a>
+        <a href="#">workmen’s compensation insurance/employer’s liability</a>
+        <a href="#">fidelity guarantee insurance</a>
+        <a href="#">money insurance</a>
+        <a href="#">merchants cover insurance policy</a>
+        <a href="#">corporate cover  insurance policy</a>
+        <a href="#">baggage group insurance policy</a>
+        <a href="#">plate glass insurance policy</a>
+        <a href="#">banker’s indemnity insurance policy</a>
+        <a href="#">jeweler's block insurance policy</a>
+        <a href="#">event insurance policy</a>
+        <a href="#">cellular network insurance</a>
+        <a href="#">art insurance</a>
+        <a href="#">hotel corporate cover</a>
+        <a href="#">pharma guard</a>
+        <a href="#">malls/multiplex comprehensive insurance policy</a>
+        <a href="#">automobile trade secure policy</a>
+        <a href="#">wallet insurance</a>
+        <a href="#">home insurance package policy </a>
+        <a href="#">travel insurance policy</a>
+        <a href="#">extended warranty insurance</a>
+        <a href="#">livestock insurance</a>
+        <a href="#">aviation insurance</a>
+        <a href="#">wind mill package policy </a>
+        <a href="#">horticulture / plantation insurance</a>
+      </div>
+    </div>
+  </div>  
+
+   <!-- Accordion Item 6 -->
+   <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseOne">
+        Employee Benefits
+      </button>
+    </h2>
+    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#productAccordion">
+      <div class="accordion-body d-flex flex-wrap">
+        <a href="#">group health insurance floater</a>
+        <a href="#">group health insurance non floater</a>
+        <a href="#">group personal accident</a>
+        <a href="#">group term life insurance</a>
+        <a href="#">personal accident retail</a>
+        <a href="#">health insurance retail</a>
+        <a href="#">group unit linked insurance plans</a>
+        <a href="#">group pension or superannuation plans</a>
+        <a href="#">group employee deposit linked insurance (edli)</a>
+      </div>
+    </div>
+  </div>  
+
+   <!-- Accordion Item 7 -->
+   <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseOne">
+        Motor
+      </button>
+    </h2>
+    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#productAccordion">
+      <div class="accordion-body d-flex flex-wrap">
+        <a href="#">goods carrying vehicle liability only policy</a>
+        <a href="#">passenger carrying vehicle liability only</a>
+        <a href="#">two wheeler vehicle liability only policy</a>
+        <a href="#">miscellaneous vehicle liability only policy</a>
+        <a href="#">motor trade road risk liability only policy</a>
+        <a href="#">private car liability only policy</a>
+        <a href="#">standalone third party long term two wheeler insurance policy</a>
+        <a href="#">motor extended warranty insurance policy</a>
+        <a href="#">commercial vehicle extended warranty</a>
+        <a href="#">private car package policy</a>
+        <a href="#">goods carrying vehicle package policy</a>
+        <a href="#">passenger carrying vehicle package policy</a>
+        <a href="#">two wheeler vehicle package policy</a>
+        <a href="#">road risk motor trade package policy</a>
+        <a href="#">internal risk motor trade package policy</a>
+        <a href="#">long term two wheeler package policy</a>
+        <a href="#">miscellaneous vehicle package policy</a>
+      </div>
+    </div>
+  </div>  
+
+    <!-- Add more accordion items as needed -->
+
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="videoModalLabel">Video Player</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="ratio ratio-16x9">
+          
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/M98BROjMcXQ " 
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(document).ready(function() {
+      // Open modal and set video URL
+      $('#videoModal').on('show.bs.modal', function(event) {
+        var button = $(event.relatedTarget);
+        var videoUrl = button.data('video');
+        var modal = $(this);
+        modal.find('#videoFrame').attr('src', videoUrl);
+      });
+  
+      // Clear video URL when modal is hidden
+      $('#videoModal').on('hide.bs.modal', function() {
+        $('#videoFrame').attr('src', '');
+      });
+  
+      // Configure the modal to not close on outside click or ESC key
+      var videoModal = new bootstrap.Modal(document.getElementById('videoModal'), {
+        backdrop: 'static',
+        keyboard: false
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Effect Example</title>
+    <style>
+        #page_content {
+            height: 400px;
+            overflow-y: scroll;
+            border: 1px solid #000;
+            position: relative;
+        }
+        
+        .download-btn {
+            display: none;
+            position: fixed;
+            right: 20px;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        
+        .download-btn.visible {
+            display: block;
+            opacity: 1;
+        }
+
+        #topDownloadBtn {
+            top: 20px;
+        }
+
+        #bottomDownloadBtn {
+            bottom: 20px;
+        }
+
+        #page_content_inner {
+            height: 1200px; /* Some large height to make scrolling possible */
+        }
+    </style>
+</head>
+<body>
+
+    <div id="page_content">
+        <div id="page_content_inner">
+            <p>Scroll me!</p>
+            <!-- Content goes here -->
+        </div>
+    </div>
+
+    <button id="topDownloadBtn" class="download-btn">Download (Top)</button>
+    <button id="bottomDownloadBtn" class="download-btn">Download (Bottom)</button>
+
+    <script>
+        const pageContent = document.getElementById('page_content');
+        const topDownloadBtn = document.getElementById('topDownloadBtn');
+        const bottomDownloadBtn = document.getElementById('bottomDownloadBtn');
+
+        pageContent.addEventListener('scroll', function() {
+            const scrollTop = pageContent.scrollTop;
+            const scrollHeight = pageContent.scrollHeight;
+            const clientHeight = pageContent.clientHeight;
+            const scrollBottom = scrollHeight - clientHeight;
+
+            // Show top download button after scrolling 100px
+            if (scrollTop > 100) {
+                topDownloadBtn.classList.add('visible');
+            } else {
+                topDownloadBtn.classList.remove('visible');
+            }
+
+            // Show bottom download button when near the bottom, hide top download button
+            if (scrollTop + clientHeight >= scrollBottom - 100) {
+                bottomDownloadBtn.classList.add('visible');
+                topDownloadBtn.classList.remove('visible');
+            } else {
+                bottomDownloadBtn.classList.remove('visible');
+            }
+        });
+    </script>
+
+</body>
+</html>

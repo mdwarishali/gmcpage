@@ -1,0 +1,82 @@
+a{
+text-decoration:none;
+}
+
+.footer{
+background: #540e40;
+}
+.risk-start{
+font-size: 14px
+}
+.brokers{
+font-size: 22px
+}
+.privacys , .policies , .contact{
+padding: 3px 0;
+}
+.disclaimer, .wellconnect{
+padding-top: 3px;
+margin-bottom: 3px;
+}
+::placeholder{
+font-size: 13px;
+/* text-align: center; */
+}
+@media screen and (max-width:1980px){
+.one{
+padding-left: 80px;
+}
+}
+
+@media screen and (max-width:992px) {
+.one{
+    padding-left: 13px;
+    height: 160px;
+}
+.two{
+    height:165px;
+}
+
+}
+/* made chages  */
+@media (max-width:600px) {
+    p.brokers{
+    font-size: 24px !important;
+}
+}
+
+.subscribe-btn{
+    width: 100%;
+}
+
+@media (max-width:556px){
+    .subscribe-btn,.form-field{
+    width: 100%;
+}
+}
+
+@media (min-width:576px) and (max-width:992px){
+    .subscribe-btn,.form-field{
+    width: 50%;
+}
+}
+
+@media (min-width:992px){
+    .subscribe-btn,.form-field{
+    width: 100%;
+}
+}
+/* chages ends here */
+.footer-social-media-icons a {
+    transition: transform 0.3s ease;
+}
+
+.footer-social-media-icons a:hover {
+    transform: translateY(-4px);
+}
+
+@media (max-width:576px){
+    .two{
+        height: 166px;
+    }
+}
